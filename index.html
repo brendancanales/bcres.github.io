@@ -1,1 +1,196 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brendan Canales | Resume & Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #1f2937;
+      color: #fff;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header p a {
+      color: #90cdf4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      background: #374151;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      animation: slideUp 1s ease;
+    }
+
+    h2 {
+      color: #1f2937;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Brendan Canales</h1>
+  <p><a href="mailto:brendancanales@gmail.com">brendancanales@gmail.com</a> | <a href="https://linkedin.com/in/brendan-canales" target="_blank">LinkedIn</a></p>
+</header>
+
+<nav>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+</nav>
+
+<div class="container">
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Engineering:</strong> Control Systems, FEA, CFD, Structural & Impedance Spectrum Analysis</li>
+      <li><strong>Manufacturing:</strong> Additive Manufacturing, GD&T</li>
+      <li><strong>Programming:</strong> NI LabVIEW, C++, Python, MATLAB</li>
+      <li><strong>Software:</strong> COMSOL, SOLIDWORKS, ANSYS, Simulink</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="project-card">
+      <h3>Research Faculty Assistant, UNM Propulsion Lab</h3>
+      <p><em>June 2025 - Present | Albuquerque, NM</em></p>
+      <p>Developed a comprehensive control system for a rotating detonation engine using LabVIEW and MATLAB.</p>
+    </div>
+    <div class="project-card">
+      <h3>Research Assistant, LISS Lab</h3>
+      <p><em>Jan 2025 - June 2025 | Socorro, NM</em></p>
+      <p>Simulated structure behavior with COMSOL and presented at the NM Tech Research Symposium.</p>
+    </div>
+    <div class="project-card">
+      <h3>Lubrication Technician, University Volkswagen Mazda</h3>
+      <p><em>June 2023 - Aug 2023 | Albuquerque, NM</em></p>
+      <p>Resolved complex mechanical issues across 15+ vehicle systems weekly.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Robot Laser Tag Competition</h3>
+      <p>Designed and programmed a 3D-printed laser tag robot using C++ and SOLIDWORKS.</p>
+    </div>
+    <div class="project-card">
+      <h3>Owens Corning LVDT Calibration Rig</h3>
+      <p>Automated sensor calibration using Python and Raspberry Pi, increasing throughput by 80%.</p>
+    </div>
+    <div class="project-card">
+      <h3>Concrete Mechanical Properties Analysis</h3>
+      <p>Tested and analyzed six concrete mixtures to recommend optimal composition.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>University of New Mexico</strong> – B.S. in Mechanical Engineering (Expected May 2027)</li>
+      <li><strong>New Mexico Tech</strong> – Coursework in Mechanical Engineering (Aug 2023 - May 2025)</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 Brendan Canales | Made with ♥</p>
+</footer>
+
+</body>
+</html>
